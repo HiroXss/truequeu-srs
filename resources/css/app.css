@@ -1,5 +1,44 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+:root {
+    --bs-primary: #f97316;
+    --bs-primary-rgb: 249, 115, 22;
+    --bs-link-color: #fb923c;
+    --bs-link-hover-color: #fdba74;
+}
+
+/* Tipografía más sobria, sin look genérico */
 body {
-    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #111318;
+}
+
+.navbar, .card, .dropdown-menu, .modal-content {
+    background-color: #181b22 !important;
+    border-color: #2a2f3a !important;
+}
+
+.bg-light {
+    background-color: #111318 !important;
+}
+
+.bg-white {
+    background-color: #181b22 !important;
+}
+
+.btn-primary {
+    border-color: var(--bs-primary);
+}
+
+.form-control, .form-select {
+    background-color: #1f232c;
+    border-color: #333a47;
+    color: #e5e7eb;
+}
+
+.form-control:focus {
+    background-color: #242933;
+    color: #e5e7eb;
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 .25rem rgba(249, 115, 22, .25);
 }
